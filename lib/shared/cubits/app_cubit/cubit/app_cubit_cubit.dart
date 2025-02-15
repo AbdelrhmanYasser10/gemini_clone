@@ -25,9 +25,9 @@ class AppCubitCubit extends Cubit<AppCubitState> {
   XFile? pickedImage;
   CroppedFile? finalImage;
   final cloudinary = Cloudinary.signedConfig(
-    apiKey: "759286832413946",
-    apiSecret: "_I6skpHGJeC2DIAVXMkcHh6MU7s",
-    cloudName: "ddksmtpkd",
+    apiKey: "Your Api key" ,
+    apiSecret: "Your secert key",
+    cloudName: "Your cloud name",
   );
 
   void getImageFromGallery() async {
@@ -212,7 +212,7 @@ class AppCubitCubit extends Cubit<AppCubitState> {
     emit(GetResponseFromGeminiLoading());
     final model = GenerativeModel(
       model: 'gemini-1.5-flash-latest',
-      apiKey: "AIzaSyD4xSW8rW_CUbrrSeWOGmH_RqVmSjjMb7o",
+      apiKey: "API KEY",
     );
 
     if (finalImage == null) {
